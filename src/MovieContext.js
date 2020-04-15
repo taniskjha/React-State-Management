@@ -1,13 +1,13 @@
-// import useState and create Context from react
-import React, { useState, createContext } from 'react'
+// Step 1 : Import useState
 
-// Export created context
-export const MovieContext = createContext();
+import React, { useState } from 'react'
 
+// Step 2 - create context export it
+export const MovieContext = React.createContext();
 
+// Step 3 - Create a movie provider function
 export const MovieProvider = (props) => {
 
-    // Line 11 to 27 is providing data 
     const [movies, setMovies] = useState([{
         Id: 1,
         Title: "The game of thrones",
@@ -32,5 +32,3 @@ export const MovieProvider = (props) => {
         </MovieContext.Provider>
     )
 }
-
-

@@ -3,14 +3,16 @@ import './App.css';
 import PostList from './PostList';
 import { MovieProvider } from './MovieContext'
 import PostListTest from './PostListTest';
+import Shishir from './Shishir'
+
 
 function App() {
   return (
     <MovieProvider>
       <div className="App">
-        <h1>React State Management</h1>
         <PostList />
         <PostListTest />
+        <Shishir />
       </div>
     </MovieProvider>
   );
